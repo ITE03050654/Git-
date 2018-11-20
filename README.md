@@ -4,8 +4,9 @@
 Git Workflow是一種採取高效率且一致性的方式來完成工作，Git在用戶管理方面提供了很大的方便和靈活性，由於沒有一個關於Git交互管理的標準化流程，所以可以針對工作選擇使用適合的Git Workflow。首次推出Git Workflow的概念是在2010由Vincent Driessen分享的A successful Git branching model，且備受大家推崇。 Workflow不會添加超出功能分支(branch)工作時所需的任何新概念或命令。相反，它在不同的分支上皆有各自的特色，並定義它們應該如何以及在何時進行交互管理。
 </br>
 # Example
-John開發他負責的功能</br>
-![image](https://github.com/ITE03050654/Git-/blob/master/john.PNG)
+讓我們舉一個典型的小團隊如何使用此工作流程進行協作的示例。我們將看到兩位開發人員John和Mary如何處理不同的功能並通過集中存儲庫共享他們的貢獻。</br>
+
+John可以在自己(local)的repo裡，開發功能，並且可以多次的編輯、提交，而不用擔心會影響到已發布的版本或是中央的repo。</br>
 Mary開發他負責的功能</br>
 ![image](https://github.com/ITE03050654/Git-/blob/master/mary.PNG)
 Mary可以和John一樣在本地工作，並且不需要擔心John跟中央的repo，因為所有本地(local)的repo都是私有的。</br>
