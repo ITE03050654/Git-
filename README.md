@@ -7,7 +7,9 @@ Git Workflow是一種採取高效率且一致性的方式來完成工作，Git�
 John開發他負責的功能<br>
 ![image](https://github.com/ITE03050654/Git-/blob/master/john.PNG)
 <br>
+</br>
 John可以在自己(local)的repo裡，開發功能，並且可以多次的編輯、提交，而不用擔心會影響到已發布的版本或是中央的repo。</br>
+</br>
 Mary開發他負責的功能<br>
 ![image](https://github.com/ITE03050654/Git-/blob/master/mary.PNG)
 <br>
