@@ -5,28 +5,28 @@ Git Workflow是一種採取高效率且一致性的方式來完成工作，Git�
 # Example
 讓我們舉一個典型的小團隊如何使用此工作流程進行協作的示例。我們將看到兩位開發人員John和Mary如何處理不同的功能並通過集中存儲庫共享他們的貢獻。<br>
 John開發他負責的功能<br>
-//john
+![image](https://github.com/ITE03050654/Git-/blob/master/john.PNG)
 <br>
 John可以在自己(local)的repo裡，開發功能，並且可以多次的編輯、提交，而不用擔心會影響到已發布的版本或是中央的repo。</br>
 Mary開發他負責的功能<br>
-//Mary
+![image](https://github.com/ITE03050654/Git-/blob/master/mary.PNG)
 <br>
 Mary可以和John一樣在本地工作，並且不需要擔心John跟中央的repo，因為所有本地(local)的repo都是私有的。</br>
-//John_push
+![image](https://github.com/ITE03050654/Git-/blob/master/john_push.PNG)
 </br>
 John完成他的工作並且上傳到中央的repo
 </br>
-//Mary_push
+![image](https://github.com/ITE03050654/Git-/blob/master/mary_push.PNG)
 </br>
 Mary也完成她的工作，並且想上傳，但是因為John已經先行上傳了，所以Mary必須pull origin的檔案，並與她自己的功能合併，然後再上傳一次。這可以防止覆蓋掉官方的版本
 </br>
-//rebase_code
+![image](https://github.com/ITE03050654/Git-/blob/master/rebase_code.PNG)
 </br>
 但是在pull的時候必須使用--rebase，雖然一般的pull一樣可以把中央repo裡的資料拉下來，但每當有人需要與中央repo同步時，你會遇到多餘的“合併提交”。對於此Workflow，最好還是重新生成而不是生成合併提交。
 </br>
-//rebase
+![image](https://github.com/ITE03050654/Git-/blob/master/rebase.PNG)
 而--rebase會讓Mary從中央repo上pull下來的資料在原本資料的最前端在建立一個git的版本控制，也就是將John的提交紀錄放在Mary本地資料的最前端，而在rebase的過程中如果遇到衝突而暫停，Mary只需要自己排除衝突就好，不需要John的幫助，而在解決問題可以使用git status來查看問題的所在，並在解決後在git上輸入</br>
-//continue
+![image](https://github.com/ITE03050654/Git-/blob/master/rebase_continue.PNG)
 </br>
 接著Mary只要在push就可以把自己完成的功能也上傳到中央repo了
 <br>
