@@ -1,4 +1,5 @@
-# Git
+# Git 
+<br>
 # 1. Comparing Workflows
 Git Workflow是一種採取高效率且一致性的方式來完成工作，Git在用戶管理方面提供了很大的方便和靈活性，由於沒有一個關於Git交互管理的標準化流程，所以可以針對工作選擇使用適合的Git Workflow。首次推出Git Workflow的概念是在2010由Vincent Driessen分享的A successful Git branching model，且備受大家推崇。 Workflow不會添加超出功能分支(branch)工作時所需的任何新概念或命令。相反，它在不同的分支上皆有各自的特色，並定義它們應該如何以及在何時進行交互管理。
 </br>
@@ -111,4 +112,30 @@ hotfix分支非常類似於Release分支，因為它們也可用於準備新的�
 最後刪除hotfix分支<br>
 ![image](https://github.com/ITE03050654/Git-/blob/master/delect_hotfix.PNG)
 <br>
+<br>
+# 3.git原理<br>
+當你在git init時，git會在目標資料夾內建立一個樹狀的資料夾</br>
+//tree
+</br>
+而.git/Objects下面一開始是空的，但你commit之後資料就會儲存一些文件和子目錄在該資料夾下面</br>
+
+//tree_after
+</br>
+git會為每個Object產生40個字元和(SHA-1)，前兩個字元當作目錄名稱，後面38個當作檔案名稱，包括git add 時產生的快照。</br>
+//git_add
+</br>
+↑為add之後會有blob Object分別指向的兩個檔案。</br>
+//tree_up
+</br>
+</br>
+</br>
+當git commit後會有一個tree Object指向兩個blob Object來建立兩個blob的關聯性</br>
+//tree_blob
+</br>
+</br>
+最後會再創造一個commit Object來指向tree Object</br>
+//tree_up
+</br>
+</br>
+假
 
