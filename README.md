@@ -1,19 +1,19 @@
 # Git 
-<br>
+</br>
 # 1. Comparing Workflows
 Git Workflow是一種採取高效率且一致性的方式來完成工作，Git在用戶管理方面提供了很大的方便和靈活性，由於沒有一個關於Git交互管理的標準化流程，所以可以針對工作選擇使用適合的Git Workflow。首次推出Git Workflow的概念是在2010由Vincent Driessen分享的A successful Git branching model，且備受大家推崇。 Workflow不會添加超出功能分支(branch)工作時所需的任何新概念或命令。相反，它在不同的分支上皆有各自的特色，並定義它們應該如何以及在何時進行交互管理。
 </br>
 # Example
-讓我們舉一個典型的小團隊如何使用此工作流程進行協作的示例。我們將看到兩位開發人員John和Mary如何處理不同的功能並通過集中存儲庫共享他們的貢獻。<br>
-John開發他負責的功能<br>
+讓我們舉一個典型的小團隊如何使用此工作流程進行協作的示例。我們將看到兩位開發人員John和Mary如何處理不同的功能並通過集中存儲庫共享他們的貢獻。</br>
+John開發他負責的功能</br>
 ![image](https://github.com/ITE03050654/Git-/blob/master/john.PNG)
 </br>
 </br>
 John可以在自己(local)的repo裡，開發功能，並且可以多次的編輯、提交，而不用擔心會影響到已發布的版本或是中央的repo。</br>
 </br>
-Mary開發他負責的功能<br>
+Mary開發他負責的功能</br>
 ![image](https://github.com/ITE03050654/Git-/blob/master/mary.PNG)
-<br>
+</br>
 Mary可以和John一樣在本地工作，並且不需要擔心John跟中央的repo，因為所有本地(local)的repo都是私有的。</br>
 ![image](https://github.com/ITE03050654/Git-/blob/master/john_push.PNG)
 </br>
@@ -32,7 +32,7 @@ Mary也完成她的工作，並且想上傳，但是因為John已經先行上傳
 ![image](https://github.com/ITE03050654/Git-/blob/master/rebase_continue.PNG)
 </br>
 接著Mary只要在push就可以把自己完成的功能也上傳到中央repo了
-<br>
+</br>
 # 2. A successful Git branching model
 原文 https://nvie.com/posts/a-successful-git-branching-model/</br>
 ![image](https://github.com/ITE03050654/Git-/blob/master/git_model.PNG)</br>
@@ -85,7 +85,7 @@ Release分支也是由develop分出來，最後必須merge回develop和master兩
 命名慣例: release-* </br></br>
 release分支是為了生產新版本做預備。也允許開發者對產品做最後的潤色(They allow for last-minute dotting of i’s and crossing t’s.)。另外release分支也可以用來修復依些小bug，和即將發布版本的元數據(版本號、建構日期等)，通過此分支develop分支將被清除，並接受新的大版本。release分支基本上就是反應develop對新版本的期望。</br>
 由develop分出一個release分支，假設當前版本是1.15，並確定下個版本是1.2，所以分出來的release分支以1.2來取名。</br>
-![image](https://github.com/ITE03050654/Git-/blob/master/create_release.PNG)<br>
+![image](https://github.com/ITE03050654/Git-/blob/master/create_release.PNG)</br>
 创建并切换到新分支后，我们 bump 了版本号。在这里，bump-version.sh 是一个虚拟出来的 shell 脚本，用来修改一些文件，使其能体现新版本。之后，新的版本被 commit 上去。</br>
 release可能會存在一段時間，這段期間可能會在此分支上修正一些bug(而不是在develop上做修正)，並且嚴禁在該分支上添加大的 feature。release最後會被合併到develop和master裡，並等待下個大版本。</br></br>
 合併到develop和master裡</br>
@@ -102,20 +102,20 @@ Hotfix分支也是由master分出來，最後必須merge回develop和master兩�
 命名慣例: hotfix-* </br></br>
 hotfix分支非常類似於Release分支，因為它們也可用於準備新的生產版本，儘管是計劃外的。它們源於必須立即修正master上發布版本的不良狀態。當必須立即解決發布版本中的嚴重錯誤時，可以從發布版本版本的主分支上的相應標記(mark)修補程序分支。</br>
 ![image](https://github.com/ITE03050654/Git-/blob/master/hotfix.png)
-<br>
-從master建立Hotfix分支<br>
+</br>
+從master建立Hotfix分支</br>
 ![image](https://github.com/ITE03050654/Git-/blob/master/create_hotfix.PNG)
-<br>
-解決bug後合併至master和develop，以確保下個版本不會出現同樣的bug，並利用git tag標記版本號<br>
+</br>
+解決bug後合併至master和develop，以確保下個版本不會出現同樣的bug，並利用git tag標記版本號</br>
 ![image](https://github.com/ITE03050654/Git-/blob/master/hotfix_merge_master.PNG)
-<br>
+</br>
 ![image](https://github.com/ITE03050654/Git-/blob/master/hotfix_merge_develop.PNG)
-<br>
-最後刪除hotfix分支<br>
+</br>
+最後刪除hotfix分支</br>
 ![image](https://github.com/ITE03050654/Git-/blob/master/delect_hotfix.PNG)
-<br>
-<br>
-# 3.git原理<br>
+</br>
+</br>
+# 3.git原理</br>
 當你在git init時，git會在目標資料夾內建立一個樹狀的資料夾</br>
 ![image](https://github.com/ITE03050654/Git-/blob/master/tree.PNG)
 </br>
