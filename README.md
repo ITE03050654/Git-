@@ -45,7 +45,7 @@ Feature通常只存在開發者的repo裡，而不會origin repo裡。</br></br>
 一般的merge(右圖)無法像merge --no -ff一樣保存著修改的訊息，必須先手動查詢log，再撤銷Feature再比對前面的案例</br>
 ![image](https://github.com/ITE03050654/Git-/blob/master/feature.png)
 </br>
-# Release分支</br></br>
+# Release分支
 Release分支也是由develop分出來，最後必須merge回develop和master兩個主支。</br></br>
 命名慣例: release-* </br></br>
 release分支是為了生產新版本做預備。也允許開發者對產品做最後的潤色(They allow for last-minute dotting of i’s and crossing t’s.)。另外release分支也可以用來修復依些小bug，和即將發布版本的元數據(版本號、建構日期等)，通過此分支develop分支將被清除，並接受新的大版本。release分支基本上就是反應develop對新版本的期望。</br>
@@ -62,7 +62,7 @@ release可能會存在一段時間，這段期間可能會在此分支上修正�
 完成合併後release分支就可以刪除了</br>
 ![image](https://github.com/ITE03050654/Git-/blob/master/delect_release.PNG)
 </br>
-# Hotfix 分支</br></br>
+# Hotfix 分支
 Hotfix分支也是由master分出來，最後必須merge回develop和master兩個主支。</br></br>
 命名慣例: hotfix-* </br></br>
 hotfix分支非常類似於Release分支，因為它們也可用於準備新的生產版本，儘管是計劃外的。它們源於必須立即修正master上發布版本的不良狀態。當必須立即解決發布版本中的嚴重錯誤時，可以從發布版本版本的主分支上的相應標記(mark)修補程序分支。</br>
