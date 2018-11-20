@@ -14,7 +14,7 @@ master/origin作為主要分支的其中之一，它的head永遠指向一個可
 develop/origin為另一個主要分支，其head永遠指向下一版最新發布的改動。</br>
 </br>
 當develop開發到一個穩定且可以發布的狀態，應該把所有的改動合併(merge)到master分支上並標記版本號，所以每次合併到master上面，就會生成一個可以發布的新版本，每當master上有commit時，可以利用git hook的腳本自動建立並推送到伺服器(master/origin)。</br></br>
-![image](https://github.com/ITE03050654/Git-/blob/master/master&develop.PNG)
+![image](https://github.com/ITE03050654/Git-/blob/master/master%26develop.png)
 # 輔助分支
 在主分支外我們會利用很多輔助分支來幫助團隊並行開發、預備新的發布，協助快速修復已經發布的版本，與主要分支不同的是這些輔助分支生命只有有限的生命，最終會被移除。</br></br>
 我們可以能會用到的輔助分支有三種</br>
