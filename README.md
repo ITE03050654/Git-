@@ -1,4 +1,30 @@
-
+# Git 
+<br>
+# 1. Comparing Workflows
+Git Workflow是一種採取高效率且一致性的方式來完成工作，Git在用戶管理方面提供了很大的方便和靈活性，由於沒有一個關於Git交互管理的標準化流程，所以可以針對工作選擇使用適合的Git Workflow。首次推出Git Workflow的概念是在2010由Vincent Driessen分享的A successful Git branching model，且備受大家推崇。 Workflow不會添加超出功能分支(branch)工作時所需的任何新概念或命令。相反，它在不同的分支上皆有各自的特色，並定義它們應該如何以及在何時進行交互管理。
+</br>
+# Example
+讓我們舉一個典型的小團隊如何使用此工作流程進行協作的示例。我們將看到兩位開發人員John和Mary如何處理不同的功能並通過集中存儲庫共享他們的貢獻。<br>
+John開發他負責的功能<br>
+![image](https://github.com/ITE03050654/Git-/blob/master/john.PNG)
+<br>
+</br>
+John可以在自己(local)的repo裡，開發功能，並且可以多次的編輯、提交，而不用擔心會影響到已發布的版本或是中央的repo。</br>
+</br>
+Mary開發他負責的功能<br>
+![image](https://github.com/ITE03050654/Git-/blob/master/mary.PNG)
+<br>
+Mary可以和John一樣在本地工作，並且不需要擔心John跟中央的repo，因為所有本地(local)的repo都是私有的。</br>
+![image](https://github.com/ITE03050654/Git-/blob/master/john_push.PNG)
+</br>
+John完成他的工作並且上傳到中央的repo
+</br>
+![image](https://github.com/ITE03050654/Git-/blob/master/mary_push_error.PNG)
+</br>
+Mary也完成她的工作，並且想上傳，但是因為John已經先行上傳了，所以Mary必須pull origin的檔案，並與她自己的功能合併，然後再上傳一次。這可以防止覆蓋掉官方的版本
+</br>
+![image](https://github.com/ITE03050654/Git-/blob/master/rebase_code.PNG)
+</br>
 
  A successful Git branching model 是作者  gitflow 在所2010年所撰寫的，是一篇關於git分支(branch)的使用方法和心得。
  
@@ -115,33 +141,10 @@ commit之後會再出現一個新的tree Object指向新的blob Object，另一�
 </br>
 直接刪除tree Object的文件條目，讓tree Object不再指向它
 
-# Git 
-<br>
-# 1. Comparing Workflows
-Git Workflow是一種採取高效率且一致性的方式來完成工作，Git在用戶管理方面提供了很大的方便和靈活性，由於沒有一個關於Git交互管理的標準化流程，所以可以針對工作選擇使用適合的Git Workflow。首次推出Git Workflow的概念是在2010由Vincent Driessen分享的A successful Git branching model，且備受大家推崇。 Workflow不會添加超出功能分支(branch)工作時所需的任何新概念或命令。相反，它在不同的分支上皆有各自的特色，並定義它們應該如何以及在何時進行交互管理。
-</br>
-# Example
-讓我們舉一個典型的小團隊如何使用此工作流程進行協作的示例。我們將看到兩位開發人員John和Mary如何處理不同的功能並通過集中存儲庫共享他們的貢獻。<br>
-John開發他負責的功能<br>
-![image](https://github.com/ITE03050654/Git-/blob/master/john.PNG)
-<br>
-</br>
-John可以在自己(local)的repo裡，開發功能，並且可以多次的編輯、提交，而不用擔心會影響到已發布的版本或是中央的repo。</br>
-</br>
-Mary開發他負責的功能<br>
-![image](https://github.com/ITE03050654/Git-/blob/master/mary.PNG)
-<br>
-Mary可以和John一樣在本地工作，並且不需要擔心John跟中央的repo，因為所有本地(local)的repo都是私有的。</br>
-![image](https://github.com/ITE03050654/Git-/blob/master/john_push.PNG)
-</br>
-John完成他的工作並且上傳到中央的repo
-</br>
-![image](https://github.com/ITE03050654/Git-/blob/master/mary_push_error.PNG)
-</br>
-Mary也完成她的工作，並且想上傳，但是因為John已經先行上傳了，所以Mary必須pull origin的檔案，並與她自己的功能合併，然後再上傳一次。這可以防止覆蓋掉官方的版本
-</br>
-![image](https://github.com/ITE03050654/Git-/blob/master/rebase_code.PNG)
-</br>
+
+
+
+
 但是在pull的時候必須使用--rebase，雖然一般的pull一樣可以把中央repo裡的資料拉下來，但每當有人需要與中央repo同步時，你會遇到多餘的“合併提交”。對於此Workflow，最好還是重新生成而不是生成合併提交。
 </br>
 ![image](https://github.com/ITE03050654/Git-/blob/master/rebase.PNG)
