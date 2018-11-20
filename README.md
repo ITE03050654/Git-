@@ -66,7 +66,7 @@ release可能會存在一段時間，這段期間可能會在此分支上修正�
 Hotfix分支也是由master分出來，最後必須merge回develop和master兩個主支。</br>
 命名慣例: hotfix-* </br>
 hotfix分支非常類似於Release分支，因為它們也可用於準備新的生產版本，儘管是計劃外的。它們源於必須立即修正master上發布版本的不良狀態。當必須立即解決發布版本中的嚴重錯誤時，可以從發布版本版本的主分支上的相應標記(mark)修補程序分支。</br>
-![image](https://github.com/ITE03050654/Git-/blob/master/hotfix.PNG)
+![image](https://github.com/ITE03050654/Git-/blob/master/hotfix.png)
 <br>
 從master建立Hotfix分支<br>
 ![image](https://github.com/ITE03050654/Git-/blob/master/create_hotfix.PNG)
