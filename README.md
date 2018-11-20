@@ -35,7 +35,7 @@ Mary也完成她的工作，並且想上傳，但是因為John已經先行上傳
 <br>
 # 2. A successful Git branching model
 原文 https://nvie.com/posts/a-successful-git-branching-model/
-![image](https://github.com/ITE03050654/Git-/blob/master/git_model.PNG)
+![image](https://github.com/ITE03050654/Git-/blob/master/git_model.PNG)</br>
 
  A successful Git branching model 是作者  gitflow 在所2010年所撰寫的，是一篇關於git分支(branch)的使用方法和心得。
  
@@ -113,41 +113,4 @@ hotfix分支非常類似於Release分支，因為它們也可用於準備新的�
 ![image](https://github.com/ITE03050654/Git-/blob/master/delect_hotfix.PNG)
 <br>
 <br>
-# 3.git原理<br>
-當你在git init時，git會在目標資料夾內建立一個樹狀的資料夾</br>
-![image](https://github.com/ITE03050654/Git-/blob/master/tree.PNG)
-</br>
-而.git/Objects下面一開始是空的，但你commit之後資料就會儲存一些文件和子目錄在該資料夾下面</br>
-![image](https://github.com/ITE03050654/Git-/blob/master/tree_after.PNG)
-</br>
-</br>
-git會為每個Object產生40個字元和(SHA-1)，前兩個字元當作目錄名稱，後面38個當作檔案名稱，包括git add 時產生的快照。</br>
-![image](https://github.com/ITE03050654/Git-/blob/master/git_add.PNG)
-</br>
-↑為add之後會有blob Object分別指向的兩個檔案。</br>
-</br>
-當git commit後會有一個tree Object指向兩個blob Object來建立兩個blob的關聯性</br>
-![image](https://github.com/ITE03050654/Git-/blob/master/tree_blob.PNG)
-</br>
-</br>
-最後git會再創造一個commit Object來指向tree Object</br>
-![image](https://github.com/ITE03050654/Git-/blob/master/tree_up.PNG)
-</br>
-</br>
-假設5a92c1修改了檔案並加入暫存區(新增 //some code magic)，這裡可以看到git已經為他新增了快照(以便commit)</br>
-![image](https://github.com/ITE03050654/Git-/blob/master/new_index_add.PNG)
-</br>
-</br>
-commit之後會再出現一個新的tree Object指向新的blob Object，另一個blob Object沒變所以同樣指向同一個地方</br>
-![image](https://github.com/ITE03050654/Git-/blob/master/new_index_commit.PNG)
-</br>
-</br>
-最後會再產生一個commit Object同時指向前一個的commit Object和現在的tree Object</br>
-![image](https://github.com/ITE03050654/Git-/blob/master/new_index_up.PNG)
-</br>
-</br>
-所以現在我們知道git如何處理文件添加和編輯，唯一剩下的就是看它如何處理文件刪除：</br>
-![image](https://github.com/ITE03050654/Git-/blob/master/new_index_delect.PNG)
-</br>
-</br>
-直接刪除tree Object的文件條目，讓tree Object不再指向它
+
