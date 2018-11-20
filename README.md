@@ -151,5 +151,5 @@ commit之後會再出現一個新的tree Object指向新的blob Object，另一�
 </br>
 直接刪除tree Object的文件條目，讓tree Object不再指向它
 
-![image](https://github.com/ITE03050654/Git-/blob/master/mary.PNG)
+![image](https://github.com/ITE03050654/Git-/blob/master/john1.PNG)
 
