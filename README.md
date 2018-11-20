@@ -11,20 +11,7 @@ John開發他負責的功能<br>
 </br>
 John可以在自己(local)的repo裡，開發功能，並且可以多次的編輯、提交，而不用擔心會影響到已發布的版本或是中央的repo。</br>
 </br>
-Mary開發他負責的功能<br>
-![image](https://github.com/ITE03050654/Git-/blob/master/mary.PNG)
-<br>
-Mary可以和John一樣在本地工作，並且不需要擔心John跟中央的repo，因為所有本地(local)的repo都是私有的。</br>
-![image](https://github.com/ITE03050654/Git-/blob/master/john_push.PNG)
-</br>
-John完成他的工作並且上傳到中央的repo
-</br>
-![image](https://github.com/ITE03050654/Git-/blob/master/mary_push_error.PNG)
-</br>
-Mary也完成她的工作，並且想上傳，但是因為John已經先行上傳了，所以Mary必須pull origin的檔案，並與她自己的功能合併，然後再上傳一次。這可以防止覆蓋掉官方的版本
-</br>
-![image](https://github.com/ITE03050654/Git-/blob/master/rebase_code.PNG)
-</br>
+
 
  A successful Git branching model 是作者  gitflow 在所2010年所撰寫的，是一篇關於git分支(branch)的使用方法和心得。
  
@@ -144,7 +131,20 @@ commit之後會再出現一個新的tree Object指向新的blob Object，另一�
 
 
 
-
+Mary開發他負責的功能<br>
+![image](https://github.com/ITE03050654/Git-/blob/master/mary.PNG)
+<br>
+Mary可以和John一樣在本地工作，並且不需要擔心John跟中央的repo，因為所有本地(local)的repo都是私有的。</br>
+![image](https://github.com/ITE03050654/Git-/blob/master/john_push.PNG)
+</br>
+John完成他的工作並且上傳到中央的repo
+</br>
+![image](https://github.com/ITE03050654/Git-/blob/master/mary_push_error.PNG)
+</br>
+Mary也完成她的工作，並且想上傳，但是因為John已經先行上傳了，所以Mary必須pull origin的檔案，並與她自己的功能合併，然後再上傳一次。這可以防止覆蓋掉官方的版本
+</br>
+![image](https://github.com/ITE03050654/Git-/blob/master/rebase_code.PNG)
+</br>
 但是在pull的時候必須使用--rebase，雖然一般的pull一樣可以把中央repo裡的資料拉下來，但每當有人需要與中央repo同步時，你會遇到多餘的“合併提交”。對於此Workflow，最好還是重新生成而不是生成合併提交。
 </br>
 ![image](https://github.com/ITE03050654/Git-/blob/master/rebase.PNG)
