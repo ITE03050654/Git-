@@ -60,7 +60,7 @@ release可能會存在一段時間，這段期間可能會在此分支上修正�
 </br>
 而這些合併可以能會造成程式碼的衝突，解決衝突後再提交</br>
 完成合併後release分支就可以刪除了</br>
-//完成合併後release分支就可以刪除了
+https://github.com/ITE03050654/Git-/blob/master/delect_release.PNG
 </br>
 # Hotfix 分支</br>
 Hotfix分支也是由master分出來，最後必須merge回develop和master兩個主支。</br>
