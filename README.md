@@ -43,7 +43,7 @@ Feature通常只存在開發者的repo裡，而不會origin repo裡。</br></br>
 1.按i進入insert模式，修改黃色合併訊息(可不修改)</br>
 2.按esc，輸入:wq(儲存)</br>
 一般的merge(右圖)無法像merge --no -ff一樣保存著修改的訊息，必須先手動查詢log，再撤銷Feature再比對前面的案例</br>
-//merge --no -ff圖片
+//
 </br>
 # Release分支</br>
 Release分支也是由develop分出來，最後必須merge回develop和master兩個主支。</br>
