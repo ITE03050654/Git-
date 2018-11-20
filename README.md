@@ -54,9 +54,9 @@ release分支是為了生產新版本做預備。也允許開發者對產品做�
 创建并切换到新分支后，我们 bump 了版本号。在这里，bump-version.sh 是一个虚拟出来的 shell 脚本，用来修改一些文件，使其能体现新版本。之后，新的版本被 commit 上去。</br>
 release可能會存在一段時間，這段期間可能會在此分支上修正一些bug(而不是在develop上做修正)，並且嚴禁在該分支上添加大的 feature。release最後會被合併到develop和master裡，並等待下個大版本。</br></br>
 合併到develop和master裡</br>
-![image](https://github.com/ITE03050654/Git-/blob/master/feature_merge.png)
+![image](https://github.com/ITE03050654/Git-/blob/master/feature_merge.PNG)
 </br>
-![image](https://github.com/ITE03050654/Git-/blob/master/feature_merge_develop.png)
+![image](https://github.com/ITE03050654/Git-/blob/master/feature_merge_develop.PNG)
 </br>
 而這些合併可以能會造成程式碼的衝突，解決衝突後再提交</br>
 完成合併後release分支就可以刪除了</br>
