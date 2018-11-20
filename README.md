@@ -6,7 +6,6 @@ Git Workflow是一種採取高效率且一致性的方式來完成工作，Git�
 # Example
 讓我們舉一個典型的小團隊如何使用此工作流程進行協作的示例。我們將看到兩位開發人員John和Mary如何處理不同的功能並通過集中存儲庫共享他們的貢獻。</br>
 John開發他負責的功能
-![image](https://github.com/ITE03050654/Git-/blob/master/john.PNG)
 John可以在自己(local)的repo裡，開發功能，並且可以多次的編輯、提交，而不用擔心會影響到已發布的版本或是中央的repo。</br>
 </br>
 Mary開發他負責的功能</br>
@@ -151,5 +150,5 @@ commit之後會再出現一個新的tree Object指向新的blob Object，另一�
 </br>
 直接刪除tree Object的文件條目，讓tree Object不再指向它
 
-
+![image](https://github.com/ITE03050654/Git-/blob/master/john.PNG)
 
