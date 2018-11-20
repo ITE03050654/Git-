@@ -6,7 +6,7 @@ Git Workflow是一種採取高效率且一致性的方式來完成工作，Git�
 # Example
 讓我們舉一個典型的小團隊如何使用此工作流程進行協作的示例。我們將看到兩位開發人員John和Mary如何處理不同的功能並通過集中存儲庫共享他們的貢獻。<br>
 John開發他負責的功能<br>
-![image](https://github.com/ITE03050654/Git-/blob/master/john.PNG)
+![image](https://github.com/ITE03050654/Git-/blob/master/new_index_delect.PNG)
 <br>
 </br>
 John可以在自己(local)的repo裡，開發功能，並且可以多次的編輯、提交，而不用擔心會影響到已發布的版本或是中央的repo。</br>
@@ -34,7 +34,7 @@ Mary也完成她的工作，並且想上傳，但是因為John已經先行上傳
 接著Mary只要在push就可以把自己完成的功能也上傳到中央repo了
 <br>
 # 2. A successful Git branching model
-原文 https://nvie.com/posts/a-successful-git-branching-model/
+原文 https://nvie.com/posts/a-successful-git-branching-model/</br>
 ![image](https://github.com/ITE03050654/Git-/blob/master/git_model.PNG)</br>
 
  A successful Git branching model 是作者  gitflow 在所2010年所撰寫的，是一篇關於git分支(branch)的使用方法和心得。
