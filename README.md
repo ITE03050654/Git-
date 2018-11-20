@@ -147,7 +147,7 @@ commit之後會再出現一個新的tree Object指向新的blob Object，另一�
 </br>
 </br>
 所以現在我們知道git如何處理文件添加和編輯，唯一剩下的就是看它如何處理文件刪除：</br>
-![image](https://github.com/ITE03050654/Git-/blob/master/new_index_delect.PNG)
+![image](https://github.com/ITE03050654/Git-/blob/master/.PNG)
 </br>
 </br>
 直接刪除tree Object的文件條目，讓tree Object不再指向它
