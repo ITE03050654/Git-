@@ -27,7 +27,7 @@ Feature是從develop分支分出來的，最後也得合併回develop分支，�
 剛開始開發的時候，Feature的功能可能還不知道，但只要功能處於開發階段Feature分支就會存在，最後會合併回develop分支(以便將新的功能新增到即將發布的版本上)或被丟棄(開發的結果令人失望)。</br>
 Feature通常只存在開發者的repo裡，而不會origin repo裡。</br></br>
 從develop上建立一個feature分支來開發新功能</br>
-![image](https://github.com/ITE03050654/Git-/blob/master/create_Feature.PNG)
+![image](https://github.com/ITE03050654/Git-/blob/master/create_feature_from_develop.PNG)
 </br>
 將已經開發完的功能合併到develop</br>
 ![image](https://github.com/ITE03050654/Git-/blob/master/Feature_merge_develop.PNG)
