@@ -113,10 +113,10 @@ hotfix分支非常類似於Release分支，因為它們也可用於準備新的�
 </br>
 # 3.git原理</br>
 當你在git init時，git會在目標資料夾內建立一個樹狀的資料夾</br>
-![image](https://github.com/ITE03050654/Git-/blob/master/tree.PNG)
+![image](https://github.com/ITE03050654/Git-/blob/master/git_tree.PNG)
 </br>
 而.git/Objects下面一開始是空的，但你commit之後資料就會儲存一些文件和子目錄在該資料夾下面</br>
-![image](https://github.com/ITE03050654/Git-/blob/master/tree_after.PNG)
+![image](https://github.com/ITE03050654/Git-/blob/master/git_tree_after.PNG)
 </br>
 </br>
 git會為每個Object產生40個字元和(SHA-1)，前兩個字元當作目錄名稱，後面38個當作檔案名稱，包括git add 時產生的快照。</br>
