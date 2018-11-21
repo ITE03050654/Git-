@@ -149,7 +149,7 @@ commit之後會再出現一個新的tree Object指向新的blob Object，另一�
 </br>
 </br>
 直接刪除tree Object的文件條目，讓tree Object不再指向它。</br>
-另外再來說說關於轉換分支(check out)時候，git內部又是怎麼運作的。<br>
+另外再來說說關於轉換分支(check out)時候，git內部又是怎麼運作的。<br></br>
 Example:假設我們在一條master的分支上，另外有一條feature是master的子分支，現在我們輸入 git checkout feature。</br>
 接下來git會執行3個動作</br>
 1.Head會指向feature的最後一次commit。</br>
