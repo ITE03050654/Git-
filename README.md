@@ -148,4 +148,21 @@ commit之後會再出現一個新的tree Object指向新的blob Object，另一�
 ![image](https://github.com/ITE03050654/Git-/blob/master/new_index_delect.PNG) 
 </br>
 </br>
-直接刪除tree Object的文件條目，讓tree Object不再指向它
+直接刪除tree Object的文件條目，讓tree Object不再指向它。</br>
+另外再來說說關於轉換分支(check out)時候，git內部又是怎麼運作的。<br>
+Example:假設我們在一條master的分支上，另外有一條feature是master的子分支，現在我們輸入 git checkout feature。</br>
+接下來git會執行3個動作</br>
+1.Head會指向feature的最後一次commit。</br>
+![image](https://github.com/ITE03050654/Git-/blob/master/head_change.PNG) 
+</br>
+</br>
+2.git會去取得feature指向的所有commit內容(git log)並添加到Index裡。</br>
+將feature指向的最後一次commmit內容儲存到Index裡，Index是一個文件儲存著所有關於指向的資料的資訊。</br>
+![image](https://github.com/ITE03050654/Git-/blob/master/index_data.PNG) 
+</br>
+</br>
+3.git會使你的分支與head指向的內容相匹配。</br>
+git將使用tree Object 和 blob Object 重新建立使feature與head的指向相匹配</br>
+![image](https://github.com/ITE03050654/Git-/blob/master/checkout_ok.PNG)
+</br>
+</br>
