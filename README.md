@@ -1,5 +1,5 @@
 # Git 
-# 1. Comparing Workflows
+# 1.Workflows
 Git Workflow是一種採取高效率且一致性的方式來完成工作，Git在用戶管理方面提供了很大的方便和靈活性，由於沒有一個關於Git交互管理的標準化流程，所以可以針對工作選擇使用適合的Git Workflow。首次推出Git Workflow的概念是在2010由Vincent Driessen分享的A successful Git branching model，且備受大家推崇。 Workflow不會添加超出功能分支(branch)工作時所需的任何新概念或命令。相反，它在不同的分支上皆有各自的特色，並定義它們應該如何以及在何時進行交互管理。
 </br>
 # Example
