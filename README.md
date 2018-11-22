@@ -11,7 +11,7 @@ Mary開發他負責的功能</br>
 ![image](https://github.com/ITE03050654/Git-/blob/master/mary.PNG)
 </br>
 Mary可以和John一樣在本地工作，並且不需要擔心John跟中央的repo，因為所有本地(local)的repo都是私有的。</br>
-![image](https://github.com/ITE03050654/Git-/blob/master/john_push.PNG)
+![image](https://github.com/ITE03050654/Git-/blob/master/mary_push.PNG)
 </br>
 John完成他的工作並且上傳到中央的repo
 </br>
