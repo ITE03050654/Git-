@@ -11,11 +11,11 @@ Mary開發他負責的功能</br>
 ![image](https://github.com/ITE03050654/Git-/blob/master/mary.PNG)
 </br>
 Mary可以和John一樣在本地工作，並且不需要擔心John跟中央的repo，因為所有本地(local)的repo都是私有的。</br>
-![image](https://github.com/ITE03050654/Git-/blob/master/mary_push.PNG)
+![image](https://github.com/ITE03050654/Git-/blob/master/john_push.PNG)
 </br>
 John完成他的工作並且上傳到中央的repo
-</br>
-![image](https://github.com/ITE03050654/Git-/blob/master/john_push_error.PNG)
+</br></br>
+![image](https://github.com/ITE03050654/Git-/blob/master/mary_push_error.PNG)
 </br>
 Mary也完成她的工作，並且想上傳，但是因為John已經先行上傳了，所以Mary必須pull origin的檔案，並與她自己的功能合併，然後再上傳一次。這可以防止覆蓋掉官方的版本
 </br>
